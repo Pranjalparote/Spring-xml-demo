@@ -228,7 +228,7 @@
       <module name="SpringTask1" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.stackroute.domain.*" />
+          <option name="PATTERN" value="com.stackroute.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -238,6 +238,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
