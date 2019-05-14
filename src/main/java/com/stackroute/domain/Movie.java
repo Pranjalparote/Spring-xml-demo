@@ -1,4 +1,3 @@
-
 package com.stackroute.domain;
 
 
@@ -11,13 +10,13 @@ public class Movie {
     }
 
 
+    public Movie(Actor actor) {
+        this.actor = actor;
+    }
+
     @Override
     public String toString() {
         return "ActorName=" + actor;
-    }
-
-    public Movie(Actor actor) {
-        this.actor = actor;
     }
 }
 

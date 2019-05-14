@@ -1,5 +1,5 @@
-<beans xmlns="http://www.springframework.org/schema/beans"
-       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="http://www.springframework.org/schema/beans"
        xsi:schemaLocation="
        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
@@ -24,15 +24,15 @@
         <constructor-arg index="2" name="age" value="25"/>
     </bean>
 
-    <bean id ="movie1" class="com.stackroute.domain.Movie" scope="singleton">
+    <bean id="movie1" class="com.stackroute.domain.Movie" scope="singleton">
 
-        <constructor-arg index="0" ref="actor1" />
+        <constructor-arg index="0" ref="actor1"/>
     </bean>
-    <bean id ="movie2" class="com.stackroute.domain.Movie" scope="prototype">
+    <bean id="movie2" class="com.stackroute.domain.Movie" scope="prototype">
 
-        <constructor-arg index="0" ref="actor2" />
+        <constructor-arg index="0" ref="actor2"/>
     </bean>
-    <bean id ="movie3" class="com.stackroute.domain.Movie" scope="singleton">
+    <bean id="movie3" class="com.stackroute.domain.Movie" scope="singleton">
 
         <constructor-arg index="0" ref="actor3"/>
     </bean>
