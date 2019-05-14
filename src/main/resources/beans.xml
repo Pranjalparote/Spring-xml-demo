@@ -5,36 +5,18 @@
 
 
     <!-- bean definitions here -->
-    <bean id="actor1" class="com.stackroute.domain.Actor" scope="prototype">
+    <bean id="actor" class="com.stackroute.domain.Actor" scope="prototype">
         <constructor-arg index="0" name="name" value="Harry Potter"/>
         <constructor-arg index="1" name="gender" value="male"/>
         <constructor-arg index="2" name="age" value="22"/>
     </bean>
 
+    <bean id ="movieA" autowire="byName" class="com.stackroute.domain.Movie">
 
-    <bean id="actor2" class="com.stackroute.domain.Actor" scope="prototype">
-        <constructor-arg index="0" name="name" value="Karina Kapoor"/>
-        <constructor-arg index="1" name="gender" value="female"/>
-        <constructor-arg index="2" name="age" value="25"/>
+    </bean>
+    <bean id ="movieB" autowire="constructor" class="com.stackroute.domain.Movie">
+
     </bean>
 
-    <bean id="actor3" class="com.stackroute.domain.Actor" scope="prototype">
-        <constructor-arg index="0" name="name" value="shahid kapoor"/>
-        <constructor-arg index="1" name="gender" value="male"/>
-        <constructor-arg index="2" name="age" value="25"/>
-    </bean>
-
-    <bean id ="movie1" class="com.stackroute.domain.Movie" scope="singleton">
-
-        <constructor-arg index="0" ref="actor1" />
-    </bean>
-    <bean id ="movie2" class="com.stackroute.domain.Movie" scope="prototype">
-
-        <constructor-arg index="0" ref="actor2" />
-    </bean>
-    <bean id ="movie3" class="com.stackroute.domain.Movie" scope="singleton">
-
-        <constructor-arg index="0" ref="actor3"/>
-    </bean>
 
 </beans>
