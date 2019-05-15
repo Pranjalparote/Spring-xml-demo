@@ -16,4 +16,11 @@ public class BeanLifecycleDemoBean implements InitializingBean, DisposableBean {
         System.out.println("In after properties set");
 
     }
+    public void customInit(){
+        System.out.println("In custom init");
+    }
+
+    public void customDestroy(){
+        System.out.println("In custom destroy");
+    }
 }
